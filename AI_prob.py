@@ -18,12 +18,12 @@ def visualize():
     x = np.linspace(-10, 10, 1000)
    
     fig, ax = plt.subplots()
-    ax.xlabel("x")
-    ax.ylabel("P(x)")
+    plt.xlabel("x")
+    plt.ylabel("P(x)")
     ax.plot(x, gauss(x, m = m, s = sigma))
 
-    ax.axhline(0, color='green')
-    ax.axvline(0, color='green')
+    plt.axhline(0, color='green')
+    plt.axvline(0, color='green')
     ax.legend()
     st.pyplot(fig)
 
